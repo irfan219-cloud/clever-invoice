@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Package",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the package."
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the package."
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the package."
+    },
+    "private": {
+      "type": "boolean",
+      "description": "Indicates if the package is private."
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of the package (e.g., module)."
+    },
+    "scripts": {
+      "type": "object",
+      "description": "Scripts that can be run using npm run."
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Dependencies required by the package."
+    },
+    "devDependencies": {
+      "type": "object",
+      "description": "Development dependencies required by the package."
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Keywords related to the package."
+    },
+    "author": {
+      "type": ["string", "object"],
+      "description": "The author of the package."
+    },
+    "license": {
+      "type": "string",
+      "description": "The license of the package."
+    }
+  }
+}
